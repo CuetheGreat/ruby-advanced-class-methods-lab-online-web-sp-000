@@ -52,7 +52,7 @@ class Song
     all.sort { |a,b| a.name <=> b.name }
   end
   
-  def self.new_from_filename(file_name)
+  def self.new_from_filename(filename)
     artist_name = filename.split(/\s[-]\s/)[0].strip
     song_name = filename.split(/\s[-]\s/)[1].split(/[.]/)[0].strip
     s = self.new
