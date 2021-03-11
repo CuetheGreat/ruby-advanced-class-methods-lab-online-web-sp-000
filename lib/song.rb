@@ -24,10 +24,6 @@ class Song
     s
   end
   
-  def self.name=(name)
-    @name = name
-  end
-  
   def self.create_by_name(name)
     song = self.new
     song.name = name
